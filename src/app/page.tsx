@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import DashboardMockup from '@/components/DashboardMockup'
 
 const NAV_LINKS = [
   { href: '#servicos', label: 'Serviços' },
@@ -320,17 +321,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Hero image placeholder */}
-              <div className="relative flex items-center justify-center">
-                <div className="absolute inset-0 -z-10 rounded-3xl bg-gradient-to-br from-primary/10 to-primary/5 blur-3xl" />
-                <div className="flex h-[350px] w-full items-center justify-center rounded-2xl border bg-muted text-muted-foreground lg:h-[450px]">
-                  <div className="text-center">
-                    <div className="text-6xl">📊</div>
-                    <p className="mt-2 text-sm">Screenshot do Dashboard</p>
-                    <p className="text-xs text-muted-foreground">(substituir por imagem real)</p>
-                  </div>
-                </div>
-              </div>
+              <DashboardMockup />
             </div>
           </div>
         </section>
@@ -682,8 +673,12 @@ export default function Home() {
             <div>
               <p className="mb-3 text-sm font-semibold">Legal</p>
               <div className="flex flex-col gap-2">
-                <span className="text-sm text-muted-foreground">Política de Privacidade</span>
-                <span className="text-sm text-muted-foreground">Termos de Uso</span>
+                <a href="/privacidade" className="text-sm text-muted-foreground hover:text-foreground">
+                  Política de Privacidade
+                </a>
+                <a href="/termos" className="text-sm text-muted-foreground hover:text-foreground">
+                  Termos de Uso
+                </a>
               </div>
             </div>
           </div>
