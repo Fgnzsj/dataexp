@@ -94,7 +94,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        {/* Web3Forms hCaptcha — free plan sitekey, loaded only when needed */}
+        <script src="https://web3forms.com/client/script.js" async defer />
+      </body>
     </html>
   )
 }
