@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 
-const SITE_URL = 'https://fgnzsj.github.io/dataexp/docs'
+const SITE_URL = 'https://fgnzsj.github.io/dataexp'
 
 const jsonLd = {
   '@context': 'https://schema.org',

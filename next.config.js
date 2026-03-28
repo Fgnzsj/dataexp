@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/fgnzsj.github.io/dataexp/docs',
-  assetPrefix: '/fgnzsj.github.io/dataexp/docs',
+  basePath: '/dataexp',
+  assetPrefix: '/dataexp',
   distDir: 'docs',
   images: { unoptimized: true },
   trailingSlash: true,
