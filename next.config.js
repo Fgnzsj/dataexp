@@ -2,7 +2,7 @@
 const nextConfig = {
   output: 'export',
   basePath: '/dataexp',
-  assetPrefix: '/dataexp',
+  assetPrefix: '/dataexp/',
   distDir: 'docs',
   images: { unoptimized: true },
   trailingSlash: true,
