@@ -617,10 +617,13 @@ export default function Home() {
               <div className="rounded-xl bg-primary-foreground p-6 text-foreground shadow-lg">
                 <h3 className="mb-4 text-lg font-semibold">Solicite seu diagnóstico gratuito</h3>
                 <form
-                  action="https://formspree.io/f/SEU_ID_AQUI"
+                  action="https://api.web3forms.com/submit"
                   method="POST"
                   className="flex flex-col gap-3"
                 >
+                  <input type="hidden" name="access_key" value="ce88bb9e-a2e2-4329-8add-25d15f9f74c8" />
+                  <input type="hidden" name="subject" value="Novo contato — DataInsight" />
+                  <input type="hidden" name="from_name" value="DataInsight Site" />
                   <input type="text" name="nome" placeholder="Nome completo" required className={inputClass} />
                   <input type="email" name="email" placeholder="E-mail profissional" required className={inputClass} />
                   <input type="tel" name="telefone" placeholder="WhatsApp / Telefone" className={inputClass} />
