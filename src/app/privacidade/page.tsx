@@ -71,11 +71,18 @@ export default function PrivacidadePage() {
             </p>
             <ul>
               <li>
-                <strong>Formspree (formspree.io)</strong> — serviço de processamento de formulários
+                <strong>Web3Forms (web3forms.com)</strong> — serviço de processamento de formulários
                 web. Consulte a{' '}
-                <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener noreferrer"
+                <a href="https://web3forms.com/privacy" target="_blank" rel="noopener noreferrer"
                   className="text-primary underline">
-                  política de privacidade do Formspree
+                  política de privacidade do Web3Forms
+                </a>.
+              </li>
+              <li>
+                <strong>hCaptcha</strong> — verificação anti-spam do formulário de contato. Consulte a{' '}
+                <a href="https://www.hcaptcha.com/privacy" target="_blank" rel="noopener noreferrer"
+                  className="text-primary underline">
+                  política de privacidade do hCaptcha
                 </a>.
               </li>
               <li>
@@ -90,7 +97,7 @@ export default function PrivacidadePage() {
 
           <Section title="5. Armazenamento e retenção">
             <p>
-              Seus dados são armazenados nos servidores do Formspree enquanto mantemos um
+              Seus dados são armazenados nos servidores do Web3Forms enquanto mantemos um
               relacionamento comercial ativo com você. Dados de contatos que não evoluem para
               clientes são excluídos em até <strong>24 meses</strong> após o último contato.
             </p>
@@ -121,7 +128,7 @@ export default function PrivacidadePage() {
               Este site é uma página estática e <strong>não utiliza cookies de rastreamento</strong>,
               pixels de marketing, Google Analytics ou qualquer tecnologia de rastreamento de
               comportamento. Não há cookies de terceiros além dos necessários para o funcionamento
-              do Formspree ao submeter o formulário de contato.
+              do Web3Forms e do hCaptcha ao submeter o formulário de contato.
             </p>
           </Section>
 

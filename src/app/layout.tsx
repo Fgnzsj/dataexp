@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 
-const SITE_URL = 'https://fgnzsj.github.io/dataexp'
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://fgnzsj.github.io/dataexp'
 
 const jsonLd = {
   '@context': 'https://schema.org',

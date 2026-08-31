@@ -621,7 +621,11 @@ export default function Home() {
                   method="POST"
                   className="flex flex-col gap-3"
                 >
-                  <input type="hidden" name="access_key" value="ce88bb9e-a2e2-4329-8add-25d15f9f74c8" />
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value={process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ?? ''}
+                  />
                   <input type="hidden" name="subject" value="Novo contato — DataInsight" />
                   <input type="hidden" name="from_name" value="DataInsight Site" />
                   <input type="text" name="nome" placeholder="Nome completo" required className={inputClass} />

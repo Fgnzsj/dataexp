@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '/dataexp'
+
 const nextConfig = {
   output: 'export',
-  basePath: '/dataexp',
-  assetPrefix: '/dataexp/',
+  basePath,
+  assetPrefix: basePath ? `${basePath}/` : '',
   distDir: 'docs',
   images: { unoptimized: true },
   trailingSlash: true,
